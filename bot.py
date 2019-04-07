@@ -33,18 +33,6 @@ def send_webhook(user, text):
     request = requests.post(config.webhook_url, headers=headers,data = json.dumps(data, ensure_ascii=False))
     print(request.text)
 
-# async def send_webhook(user, text):
-#     await client.edit_profile(username=user['name'])
-#     headers = {'Content-Type': 'application/json'}
-#     data = {
-#         "content": text,
-#         "username": user['name'],
-#         "avatar_url": user['profile_picture'],
-#     }
-#     request = requests.post("https://discordapp.com/api/webhooks/559390785733132288/IZ9TFrFqkYI5VY3uxLMx4juyacsRCLX6QtUU71ViJMf3XFq6eY7MqL08CWV4uCDSApJ6", headers=headers,data = json.dumps(data, ensure_ascii=False))
-#     print(request.text)
-#     await client.edit_profile(username="???")
-
 
 class MyClient(discord.Client):
     def __init__(self, *args, **kwargs):

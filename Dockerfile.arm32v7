@@ -1,4 +1,4 @@
-FROM arm32v7/python:3.6-alpine3.8
+FROM arm32v7/python:3.6-alpine3.9
 
 LABEL maintainer="Kyunghan (Paul) Lee <enigma@enigmatic.network>"
 

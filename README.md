@@ -1,2 +1,2 @@
-# conv_sim
+# conv-sim
 A conversation simulation Discord Bot.
